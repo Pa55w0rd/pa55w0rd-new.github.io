@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.pa55w0rd.online/note/</loc>
+    
+    <lastmod>2019-11-19T06:00:35.884Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.pa55w0rd.online/other/</loc>
+    
+    <lastmod>2019-11-19T02:15:39.930Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.pa55w0rd.online/OpenRASP-alert/</loc>
     
     <lastmod>2019-11-08T05:54:16.318Z</lastmod>
@@ -138,13 +152,6 @@
     <loc>http://www.pa55w0rd.online/crontab-resume/</loc>
     
     <lastmod>2019-07-16T02:48:12.408Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.pa55w0rd.online/other/</loc>
-    
-    <lastmod>2019-07-10T07:41:10.023Z</lastmod>
     
   </url>
   

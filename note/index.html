@@ -8,19 +8,21 @@
 
   
 
-  <title>Archives: 2018/12 | Pa55w0rd &#39;s Blog</title>
+  <title>记录 | Pa55w0rd &#39;s Blog</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="信息安全">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Pa55w0rd &#39;s Blog">
-<meta property="og:url" content="http://www.pa55w0rd.online/archives/2018/12/index.html">
+  <meta name="description" content="Centos 7 安装nmap 7.8yum直接安装nmap为6.40版本，新版nmap为7.8 yum info nmap 直接使用rpm包安装最新版 https://nmap.org/dist/ 下载 rpm -vhU https://nmap.org/dist/nmap-7.80-1.x86_64.rpm centos 7 安装 mysql 8下载mysql repo源并安装1rpm -Uv">
+<meta name="keywords" content="基础">
+<meta property="og:type" content="article">
+<meta property="og:title" content="记录">
+<meta property="og:url" content="http://www.pa55w0rd.online/note/index.html">
 <meta property="og:site_name" content="Pa55w0rd &#39;s Blog">
-<meta property="og:description" content="信息安全">
+<meta property="og:description" content="Centos 7 安装nmap 7.8yum直接安装nmap为6.40版本，新版nmap为7.8 yum info nmap 直接使用rpm包安装最新版 https://nmap.org/dist/ 下载 rpm -vhU https://nmap.org/dist/nmap-7.80-1.x86_64.rpm centos 7 安装 mysql 8下载mysql repo源并安装1rpm -Uv">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-11-19T06:00:35.884Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Pa55w0rd &#39;s Blog">
-<meta name="twitter:description" content="信息安全">
+<meta name="twitter:title" content="记录">
+<meta name="twitter:description" content="Centos 7 安装nmap 7.8yum直接安装nmap为6.40版本，新版nmap为7.8 yum info nmap 直接使用rpm包安装最新版 https://nmap.org/dist/ 下载 rpm -vhU https://nmap.org/dist/nmap-7.80-1.x86_64.rpm centos 7 安装 mysql 8下载mysql repo源并安装1rpm -Uv">
 
   
 
@@ -184,260 +186,170 @@ ga('send', 'pageview');
 </header>
 
     <div class="outer">
-      <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap" data-scroll-reveal="enter left and over 0.7s">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/docker1/" class="archive-article-date">
+      <section id="main"><article id="post-note" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div data-scroll-reveal="enter top and over 0.7s" class="article-meta">
+    <a href="/note/" class="article-date">
   <i class="fa fa-calendar"></i>
-  <time datetime="2018-12-29T02:31:32.000Z" itemprop="datePublished">12月 29</time>
+  <time datetime="2019-08-10T02:53:39.000Z" itemprop="datePublished">2019-08-10</time>
 </a>
 
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/note/">note</a>
+  </div>
+
+
+  </div>
+  <div class="article-inner">
+    
+    
+
+      <header class="article-header">
+
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/docker1/">
-        <i class="fa fa-pencil-square-o  article-title-icon"></i>修改正在运行的docker容器的端口映射</a>
+    <h1 class="article-title" itemprop="name">
+      <i class="fa fa-pencil-square-o  article-title-icon"></i>记录
     </h1>
   
 
 
-    </header>
-  </div>
-</article>
 
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/insight/" class="archive-article-date">
-  <i class="fa fa-calendar"></i>
-  <time datetime="2018-12-26T08:03:17.000Z" itemprop="datePublished">12月 26</time>
-</a>
+    <!-- 目录内容 -->
+
+  <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+        <span class="btn-bg"></span>
+        <span class="btn-text">文章导航</span>
+        </p>
+<div id="toc-article" class="toc-article">
+    <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+  <strong class="toc-title">文章目录</strong>
+         <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Centos-7-安装nmap-7-8"><span class="toc-number">1.</span> <span class="toc-text">Centos 7 安装nmap 7.8</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#centos-7-安装-mysql-8"><span class="toc-number">2.</span> <span class="toc-text">centos 7 安装 mysql 8</span></a></li></ol>
+       </div>
+ <script type="text/javascript">
+function showToc(){
+  var toc_article = document.getElementById("toc-article");
+  var show_toc_btn = document.getElementById("show-toc-btn");
+  toc_article.setAttribute("style","display:block");
+  show_toc_btn.setAttribute("style","display:none");
+  };
+function showBtn(){
+  var toc_article = document.getElementById("toc-article");
+  var show_toc_btn = document.getElementById("show-toc-btn");
+  toc_article.setAttribute("style","display:none");
+  show_toc_btn.setAttribute("style","display:block");
+  };
+ </script>
+    		
+<!-- 目录内容结束 -->
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+        
+          <h2 id="Centos-7-安装nmap-7-8"><a href="#Centos-7-安装nmap-7-8" class="headerlink" title="Centos 7 安装nmap 7.8"></a>Centos 7 安装nmap 7.8</h2><p>yum直接安装nmap为6.40版本，新版nmap为7.8</p>
+<p>yum info nmap</p>
+<p>直接使用rpm包安装最新版</p>
+<p><a href="https://nmap.org/dist/" target="_blank" rel="noopener">https://nmap.org/dist/</a> 下载</p>
+<p>rpm -vhU <a href="https://nmap.org/dist/nmap-7.80-1.x86_64.rpm" target="_blank" rel="noopener">https://nmap.org/dist/nmap-7.80-1.x86_64.rpm</a></p>
+<h2 id="centos-7-安装-mysql-8"><a href="#centos-7-安装-mysql-8" class="headerlink" title="centos 7 安装 mysql 8"></a>centos 7 安装 mysql 8</h2><p>下载mysql repo源并安装<br><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -Uvh http:<span class="regexp">//</span>dev.mysql.com<span class="regexp">/get/my</span>sql57-community-release-el7-<span class="number">9</span>.noarch.rpm</span><br></pre></td></tr></table></figure></p>
+<p>查看可用的mysql版本<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum repolist <span class="keyword">all</span> | <span class="keyword">grep</span> mysql</span><br></pre></td></tr></table></figure></p>
+<p>修改源文件,禁用5.7,启用8.0<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Vi /etc/yum<span class="selector-class">.repos</span><span class="selector-class">.d</span>/mysql-community.repo</span><br></pre></td></tr></table></figure></p>
+<p>把里面的8.0enabled改为1就可以了，其他的版本改为0</p>
+<p>修改完之后查看可用版本<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># yum repolist enabled | grep mysql </span></span><br><span class="line">mysql-connectors-community/x86_64 MySQL Connectors<span class="built_in"> Community </span>                131</span><br><span class="line">mysql-tools-community/x86_64      MySQL Tools<span class="built_in"> Community </span>                     100</span><br><span class="line">mysql80-community/x86_64          MySQL 8.0<span class="built_in"> Community Server </span>                145</span><br></pre></td></tr></table></figure></p>
+<p>8.0版本启用后,安装Mysql<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="keyword">install</span> -y mysql-community-<span class="keyword">server</span></span><br></pre></td></tr></table></figure></p>
+<p>启动，开机启动<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl start mysqld</span><br><span class="line">systemctl <span class="builtin-name">enable</span> mysqld</span><br><span class="line">systemctl daemon-reload</span><br></pre></td></tr></table></figure></p>
+<p>查看随机生成的密码,注意记住密码<br><figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep <span class="string">'temporary password'</span> /<span class="built_in">var</span>/<span class="keyword">log</span>/mysqld.<span class="keyword">log</span></span><br></pre></td></tr></table></figure></p>
+<p>修改root密码<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">USER</span> <span class="string">'root'</span>@<span class="string">'localhost'</span> <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'password'</span>;</span><br></pre></td></tr></table></figure></p>
+
+        
+<!--
+        </br>
+        <span id="busuanzi_container_page_pv">
+          阅读次数<span id="busuanzi_value_page_pv"></span>
+        </span>
+        <h2 id="Centos-7-安装nmap-7-8"><a href="#Centos-7-安装nmap-7-8" class="headerlink" title="Centos 7 安装nmap 7.8"></a>Centos 7 安装nmap 7.8</h2><p>yum直接安装nmap为6.40版本，新版nmap为7.8</p>
+<p>yum info nmap</p>
+<p>直接使用rpm包安装最新版</p>
+<p><a href="https://nmap.org/dist/" target="_blank" rel="noopener">https://nmap.org/dist/</a> 下载</p>
+<p>rpm -vhU <a href="https://nmap.org/dist/nmap-7.80-1.x86_64.rpm" target="_blank" rel="noopener">https://nmap.org/dist/nmap-7.80-1.x86_64.rpm</a></p>
+<h2 id="centos-7-安装-mysql-8"><a href="#centos-7-安装-mysql-8" class="headerlink" title="centos 7 安装 mysql 8"></a>centos 7 安装 mysql 8</h2><p>下载mysql repo源并安装<br><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -Uvh http:<span class="regexp">//</span>dev.mysql.com<span class="regexp">/get/my</span>sql57-community-release-el7-<span class="number">9</span>.noarch.rpm</span><br></pre></td></tr></table></figure></p>
+<p>查看可用的mysql版本<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum repolist <span class="keyword">all</span> | <span class="keyword">grep</span> mysql</span><br></pre></td></tr></table></figure></p>
+<p>修改源文件,禁用5.7,启用8.0<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Vi /etc/yum<span class="selector-class">.repos</span><span class="selector-class">.d</span>/mysql-community.repo</span><br></pre></td></tr></table></figure></p>
+<p>把里面的8.0enabled改为1就可以了，其他的版本改为0</p>
+<p>修改完之后查看可用版本<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># yum repolist enabled | grep mysql </span></span><br><span class="line">mysql-connectors-community/x86_64 MySQL Connectors<span class="built_in"> Community </span>                131</span><br><span class="line">mysql-tools-community/x86_64      MySQL Tools<span class="built_in"> Community </span>                     100</span><br><span class="line">mysql80-community/x86_64          MySQL 8.0<span class="built_in"> Community Server </span>                145</span><br></pre></td></tr></table></figure></p>
+<p>8.0版本启用后,安装Mysql<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="keyword">install</span> -y mysql-community-<span class="keyword">server</span></span><br></pre></td></tr></table></figure></p>
+<p>启动，开机启动<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl start mysqld</span><br><span class="line">systemctl <span class="builtin-name">enable</span> mysqld</span><br><span class="line">systemctl daemon-reload</span><br></pre></td></tr></table></figure></p>
+<p>查看随机生成的密码,注意记住密码<br><figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep <span class="string">'temporary password'</span> /<span class="built_in">var</span>/<span class="keyword">log</span>/mysqld.<span class="keyword">log</span></span><br></pre></td></tr></table></figure></p>
+<p>修改root密码<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">USER</span> <span class="string">'root'</span>@<span class="string">'localhost'</span> <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'password'</span>;</span><br></pre></td></tr></table></figure></p>
+-->
+      
+
+    </div>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+
+    <footer class="article-footer">
+      
+        <a data-url="http://www.pa55w0rd.online/note/" data-id="ck57i2mdr002o8ooqq6hvmle7" class="article-share-link" data-share="baidu" data-title="记录">分享到</a>
+      
 
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/insight/">
-        <i class="fa fa-pencil-square-o  article-title-icon"></i>insight洞察-漏洞生命周期管理使用</a>
-    </h1>
-  
-
-
-    </header>
-  </div>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/firewall/" class="archive-article-date">
-  <i class="fa fa-calendar"></i>
-  <time datetime="2018-12-13T10:57:19.000Z" itemprop="datePublished">12月 13</time>
-</a>
+        <a href="http://www.pa55w0rd.online/note/#gitalk-container" class="article-comment-link">留言</a>
+      
 
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/firewall/">
-        <i class="fa fa-pencil-square-o  article-title-icon"></i>Centos 7 使用firewalld防火墙</a>
-    </h1>
-  
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/基础/">基础</a></li></ul>
 
 
-    </header>
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/proxychains-error/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">← 上一篇</strong>
+      <div class="article-nav-title">proxychains_error</div>
+    </a>
+  
+  
+    <a href="/unauthorized-access-sumup/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇 →</strong>
+      <div class="article-nav-title">
+        
+          常见未授权访问漏洞总结
+        
+      </div>
+    </a>
+  
+</nav>
+
+
+  
 </article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/burp/" class="archive-article-date">
-  <i class="fa fa-calendar"></i>
-  <time datetime="2018-12-13T10:53:31.000Z" itemprop="datePublished">12月 13</time>
-</a>
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/burp/">
-        <i class="fa fa-pencil-square-o  article-title-icon"></i>Burp Suite使用中的一些技巧</a>
-    </h1>
-  
+<!--
+<div class="share-component" data-disabled="" data-description="Share.js - 一键分享到微博，QQ空间，腾讯微博，人人，豆瓣">一键分享</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+-->
 
 
-    </header>
-  </div>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/https-sec-deploy/" class="archive-article-date">
-  <i class="fa fa-calendar"></i>
-  <time datetime="2018-12-12T10:39:23.000Z" itemprop="datePublished">12月 12</time>
-</a>
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/https-sec-deploy/">
-        <i class="fa fa-pencil-square-o  article-title-icon"></i>HTTPS 安全最佳实践（转发）</a>
-    </h1>
-  
+  <section class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section> 
 
 
-    </header>
-  </div>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/encrypt-test/" class="archive-article-date">
-  <i class="fa fa-calendar"></i>
-  <time datetime="2018-12-05T08:47:53.000Z" itemprop="datePublished">12月 5</time>
-</a>
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/encrypt-test/">
-        <i class="fa fa-pencil-square-o  article-title-icon"></i>encrypt_test</a>
-    </h1>
-  
 
 
-    </header>
-  </div>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/环境变量设置/" class="archive-article-date">
-  <i class="fa fa-calendar"></i>
-  <time datetime="2018-12-05T06:56:46.000Z" itemprop="datePublished">12月 5</time>
-</a>
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/环境变量设置/">
-        <i class="fa fa-pencil-square-o  article-title-icon"></i>Linux环境变量设置</a>
-    </h1>
-  
-
-
-    </header>
-  </div>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/yyoa/" class="archive-article-date">
-  <i class="fa fa-calendar"></i>
-  <time datetime="2018-12-04T08:11:57.000Z" itemprop="datePublished">12月 4</time>
-</a>
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/yyoa/">
-        <i class="fa fa-pencil-square-o  article-title-icon"></i>用友致远A6 OA存在sql注入并拿shell</a>
-    </h1>
-  
-
-
-    </header>
-  </div>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/linux-backdoor-killer/" class="archive-article-date">
-  <i class="fa fa-calendar"></i>
-  <time datetime="2018-12-03T07:07:05.000Z" itemprop="datePublished">12月 3</time>
-</a>
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/linux-backdoor-killer/">
-        <i class="fa fa-pencil-square-o  article-title-icon"></i>Linux后门入侵检测工具使用</a>
-    </h1>
-  
-
-
-    </header>
-  </div>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/winspect/" class="archive-article-date">
-  <i class="fa fa-calendar"></i>
-  <time datetime="2018-12-03T03:59:36.000Z" itemprop="datePublished">12月 3</time>
-</a>
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/winspect/">
-        <i class="fa fa-pencil-square-o  article-title-icon"></i>WINSpect-基于Powershell的Windows安全审计工具</a>
-    </h1>
-  
-
-
-    </header>
-  </div>
-</article>
-
-  
-  
-    </div></section>
-  
+  <script type="text/javascript">document.write(unescape("%3Cdiv id='reward' %3E%3C/div%3E%3Cscript src='/js/reward.min.js' type='text/javascript'%3E%3C/script%3E"));</script>
+  <div id="gitalk-container"></div>
 
 
 </section>
@@ -831,7 +743,7 @@ $(document).on("click", "ul.archive-list li.archive-list-item", function () {
       owner: "Pa55w0rd",
       admin: "Pa55w0rd",
       // id: location.pathname,      // Ensure uniqueness and length less than 50
-      id: "",      // Ensure uniqueness and length less than 50
+      id: "Sat Aug 10 2019 10:53:39 GMT+0800",      // Ensure uniqueness and length less than 50
       distractionFreeMode: false  // Facebook-like distraction free mode
     })
     gitalk.render('gitalk-container')

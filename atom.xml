@@ -157,6 +157,31 @@
   </entry>
   
   <entry>
+    <title>记录</title>
+    <link href="http://www.pa55w0rd.online/note/"/>
+    <id>http://www.pa55w0rd.online/note/</id>
+    <published>2019-08-10T02:53:39.000Z</published>
+    <updated>2019-11-19T06:00:35.884Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Centos-7-安装nmap-7-8"><a href="#Centos-7-安装nmap-7-8" class="headerlink" title="Centos 7 安装nmap 7.8"></a>Centos 7 安装nmap 7.8</h2><p>yum直接安装nmap为6.40版本，新版nmap为7.8</p><p>yum info nmap</p><p>直接使用rpm包安装最新版</p><p><a href="https://nmap.org/dist/" target="_blank" rel="noopener">https://nmap.org/dist/</a> 下载</p><p>rpm -vhU <a href="https://nmap.org/dist/nmap-7.80-1.x86_64.rpm" target="_blank" rel="noopener">https://nmap.org/dist/nmap-7.80-1.x86_64.rpm</a></p><h2 id="centos-7-安装-mysql-8"><a href="#centos-7-安装-mysql-8" class="headerlink" title="centos 7 安装 mysql 8"></a>centos 7 安装 mysql 8</h2><p>下载mysql repo源并安装<br><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -Uvh http:<span class="regexp">//</span>dev.mysql.com<span class="regexp">/get/my</span>sql57-community-release-el7-<span class="number">9</span>.noarch.rpm</span><br></pre></td></tr></table></figure></p><p>查看可用的mysql版本<br><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum repolist <span class="keyword">all</span> | <span class="keyword">grep</span> mysql</span><br></pre></td></tr></table></figure></p><p>修改源文件,禁用5.7,启用8.0<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Vi /etc/yum<span class="selector-class">.repos</span><span class="selector-class">.d</span>/mysql-community.repo</span><br></pre></td></tr></table></figure></p><p>把里面的8.0enabled改为1就可以了，其他的版本改为0</p><p>修改完之后查看可用版本<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># yum repolist enabled | grep mysql </span></span><br><span class="line">mysql-connectors-community/x86_64 MySQL Connectors<span class="built_in"> Community </span>                131</span><br><span class="line">mysql-tools-community/x86_64      MySQL Tools<span class="built_in"> Community </span>                     100</span><br><span class="line">mysql80-community/x86_64          MySQL 8.0<span class="built_in"> Community Server </span>                145</span><br></pre></td></tr></table></figure></p><p>8.0版本启用后,安装Mysql<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="keyword">install</span> -y mysql-community-<span class="keyword">server</span></span><br></pre></td></tr></table></figure></p><p>启动，开机启动<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl start mysqld</span><br><span class="line">systemctl <span class="builtin-name">enable</span> mysqld</span><br><span class="line">systemctl daemon-reload</span><br></pre></td></tr></table></figure></p><p>查看随机生成的密码,注意记住密码<br><figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep <span class="string">'temporary password'</span> /<span class="built_in">var</span>/<span class="keyword">log</span>/mysqld.<span class="keyword">log</span></span><br></pre></td></tr></table></figure></p><p>修改root密码<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">USER</span> <span class="string">'root'</span>@<span class="string">'localhost'</span> <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'password'</span>;</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Centos-7-安装nmap-7-8&quot;&gt;&lt;a href=&quot;#Centos-7-安装nmap-7-8&quot; class=&quot;headerlink&quot; title=&quot;Centos 7 安装nmap 7.8&quot;&gt;&lt;/a&gt;Centos 7 安装nmap 7.8&lt;/h2&gt;&lt;p&gt;yu
+      
+    
+    </summary>
+    
+      <category term="note" scheme="http://www.pa55w0rd.online/categories/note/"/>
+    
+    
+      <category term="基础" scheme="http://www.pa55w0rd.online/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
     <title>proxychains_error</title>
     <link href="http://www.pa55w0rd.online/proxychains-error/"/>
     <id>http://www.pa55w0rd.online/proxychains-error/</id>
@@ -465,29 +490,6 @@
     
     
       <category term="note" scheme="http://www.pa55w0rd.online/tags/note/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS7下mysql5.7忘记root密码</title>
-    <link href="http://www.pa55w0rd.online/mysql-forget-passwd/"/>
-    <id>http://www.pa55w0rd.online/mysql-forget-passwd/</id>
-    <published>2019-01-21T07:02:33.000Z</published>
-    <updated>2019-01-21T07:26:36.877Z</updated>
-    
-    <content type="html"><![CDATA[<p>CentOS7下mysql5.7忘记root密码</p><h2 id="步骤一-配置文件中添加skip-grant-tables"><a href="#步骤一-配置文件中添加skip-grant-tables" class="headerlink" title="步骤一 配置文件中添加skip-grant-tables"></a>步骤一 配置文件中添加skip-grant-tables</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/my.cnf</span><br><span class="line"><span class="comment"># 在[mysqld]中添加skip-grant-tables</span></span><br><span class="line">    [mysqld]</span><br><span class="line">    skip-grant-tables</span><br><span class="line">    datadir=/var/lib/mysql</span><br><span class="line">    socket=/var/lib/mysql/mysql.sock</span><br></pre></td></tr></table></figure><a id="more"></a><h2 id="步骤二-重启mysql"><a href="#步骤二-重启mysql" class="headerlink" title="步骤二 重启mysql"></a>步骤二 重启mysql</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">systemctl restart mysqld</span></span><br></pre></td></tr></table></figure><h2 id="步骤三-空密码登录"><a href="#步骤三-空密码登录" class="headerlink" title="步骤三 空密码登录"></a>步骤三 空密码登录</h2><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot -<span class="selector-tag">p</span> (直接点击回车，密码为空)</span><br></pre></td></tr></table></figure><h2 id="步骤四-修改root密码"><a href="#步骤四-修改root密码" class="headerlink" title="步骤四 修改root密码"></a>步骤四 修改root密码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 选择数据库</span></span><br><span class="line">use mysql;</span><br><span class="line"><span class="comment"># 修改root密码</span></span><br><span class="line">update user <span class="built_in">set</span> authentication_string=password(<span class="string">'root'</span>) <span class="built_in">where</span> user=<span class="string">'root'</span>;</span><br><span class="line"><span class="comment"># 执行</span></span><br><span class="line">flush privileges;</span><br><span class="line"><span class="comment"># 退出</span></span><br><span class="line"><span class="built_in">exit</span>;</span><br></pre></td></tr></table></figure><h2 id="步骤五-删除-skip-grant-tables，并重启mysql服务"><a href="#步骤五-删除-skip-grant-tables，并重启mysql服务" class="headerlink" title="步骤五 删除 skip-grant-tables，并重启mysql服务"></a>步骤五 删除 skip-grant-tables，并重启mysql服务</h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;CentOS7下mysql5.7忘记root密码&lt;/p&gt;
-&lt;h2 id=&quot;步骤一-配置文件中添加skip-grant-tables&quot;&gt;&lt;a href=&quot;#步骤一-配置文件中添加skip-grant-tables&quot; class=&quot;headerlink&quot; title=&quot;步骤一 配置文件中添加skip-grant-tables&quot;&gt;&lt;/a&gt;步骤一 配置文件中添加skip-grant-tables&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vi /etc/my.cnf&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 在[mysqld]中添加skip-grant-tables&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    [mysqld]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    skip-grant-tables&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    datadir=/var/lib/mysql&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    socket=/var/lib/mysql/mysql.sock&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="note" scheme="http://www.pa55w0rd.online/categories/note/"/>
-    
-    
-      <category term="解决方法" scheme="http://www.pa55w0rd.online/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
     
   </entry>
   
